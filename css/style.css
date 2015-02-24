@@ -43,9 +43,17 @@ body {
 
 .item-block {
 	display: inline-block;
-	width: 230px;
-	margin-left: 10px;
-	margin-right: 10px;
+	width: 14em;
+	margin-left: 0.625em;
+	margin-right: 0.625em;
+}
+
+.item-purchased {
+	vertical-align: bottom;
+}
+
+.item-descr {
+	vertical-align: bottom;
 }
 
 .footer-component {
