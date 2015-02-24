@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+
+<head>
+<title>Shopping List</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<form>
+
+<header id="header">
+	<h1>Shopping List</h1>
+</header>
+
+<section id="new-item-section">
+	<div id="new-item-row">
+		New item:
+		<input type="text" id="new-item-text" maxlength="20" autofocus placeholder="item name" />
+		<img id="add-img" src="images/add.png" />
+		(or hit Enter)
+	</div>
+</section>
+
+<section id="list-items-section">
+	<div id="items-header">
+		<span>List Items</span>
+	</div>
+
+	<div id="items-body">
+
+		<div class="item-block">
+			<input class="item-purchased" type="checkbox" value="1" />
+			<span class="item-descr">eggs</span>
+		</div>
+
+		<div class="item-block">
+			<input class="item-purchased" type="checkbox" value="1" />
+			<span class="item-descr">bacon</span>
+		</div>
+
+		<div class="item-block">
+			<input class="item-purchased" type="checkbox" value="1" />
+			<span class="item-descr">cheese</span>
+		</div>
+
+		<div class="item-block">
+			<input class="item-purchased" type="checkbox" value="1" />
+			<span class="item-descr">croissants</span>
+		</div>
+
+		<div class="item-block">
+			<input class="item-purchased" type="checkbox" value="1" />
+			<span class="item-descr">milk</span>
+		</div>
+
+		<div class="item-block">
+			<input class="item-purchased" type="checkbox" value="1" />
+			<span class="item-descr">orange juice</span>
+		</div>
+
+	</div>
+</section>
+
+<footer id="footer">
+	<div id="footer-content">
+		<span>To delete an item, drag it here.</span>
+		<img id="trash-img" src="images/trash.jpg" />
+	</div>
+</footer>
+
+</form>
+
+</body>
+
+</html>
