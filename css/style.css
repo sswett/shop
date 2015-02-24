@@ -1,6 +1,10 @@
 body {
-	width: 800px;
+	width: 80%;
 	margin: 0 auto;
+}
+
+#header h1 {
+	color: silver;
 }
 
 #new-item-section {
@@ -8,9 +12,44 @@ body {
 	margin-bottom: 50px;
 }
 
+.new-item-component {
+	display: inline-block;
+	margin-right: 1em;
+	vertical-align: bottom;
+}
+
 #list-items-section {
 	margin-top: 50px;
 	margin-bottom: 50px;
+}
+
+#items-header {
+	background-color: silver;
+	color: white;
+	padding: 0.5em;
+}
+
+#items-body {
+	border: 1px solid silver;
+	padding: 1em;
+
+}
+
+#items-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.item-block {
+	display: inline-block;
+	width: 230px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.footer-text {
+	display: inline-block;
 }
 
 #add-img {

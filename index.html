@@ -16,10 +16,9 @@
 
 <section id="new-item-section">
 	<div id="new-item-row">
-		New item:
-		<input type="text" id="new-item-text" maxlength="20" autofocus placeholder="item name" />
-		<img id="add-img" src="images/add.png" />
-		(or hit Enter)
+		<label class="new-item-component" for="new-item-text">New item:</label>
+		<input class="new-item-component" type="text" id="new-item-text" maxlength="20" autofocus placeholder="item name" />
+		<img class="new-item-component" id="add-img" src="images/add.png" title="Add item -- can also just hit Enter" />
 	</div>
 </section>
 
@@ -30,43 +29,46 @@
 
 	<div id="items-body">
 
-		<div class="item-block">
+	<ul id="items-list">
+
+		<li class="item-block">
 			<input class="item-purchased" type="checkbox" value="1" />
 			<span class="item-descr">eggs</span>
-		</div>
+		</li>
 
-		<div class="item-block">
+		<li class="item-block">
 			<input class="item-purchased" type="checkbox" value="1" />
 			<span class="item-descr">bacon</span>
-		</div>
+		</li>
 
-		<div class="item-block">
+		<li class="item-block">
 			<input class="item-purchased" type="checkbox" value="1" />
 			<span class="item-descr">cheese</span>
-		</div>
+		</li>
 
-		<div class="item-block">
+		<li class="item-block">
 			<input class="item-purchased" type="checkbox" value="1" />
 			<span class="item-descr">croissants</span>
-		</div>
+		</li>
 
-		<div class="item-block">
+		<li class="item-block">
 			<input class="item-purchased" type="checkbox" value="1" />
 			<span class="item-descr">milk</span>
-		</div>
+		</li>
 
-		<div class="item-block">
+		<li class="item-block">
 			<input class="item-purchased" type="checkbox" value="1" />
 			<span class="item-descr">orange juice</span>
-		</div>
+		</li>
+
+	<ul>		
 
 	</div>
 </section>
 
 <footer id="footer">
 	<div id="footer-content">
-		<span>To delete an item, drag it here.</span>
-		<img id="trash-img" src="images/trash.jpg" />
+		<img id="trash-img" src="images/trash.jpg" title="Drag item here to delete" />
 	</div>
 </footer>
 
