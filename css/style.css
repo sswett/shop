@@ -48,8 +48,9 @@ body {
 	margin-right: 10px;
 }
 
-.footer-text {
+.footer-component {
 	display: inline-block;
+	vertical-align: middle;
 }
 
 #add-img {
