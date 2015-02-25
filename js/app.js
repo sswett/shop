@@ -67,13 +67,13 @@ function allowDrop(ev)
 
 function drag(ev) 
 {
-    ev.dataTransfer.setData("itemId", ev.target.id);
+    ev.dataTransfer.setData("text", ev.target.id);
 }
 
 
 function drop(ev) 
 {
     ev.preventDefault();
-    var itemId = ev.dataTransfer.getData("itemId");
+    var itemId = ev.dataTransfer.getData("text");
     $("#" + itemId).remove();
 }

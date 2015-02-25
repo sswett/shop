@@ -1,10 +1,17 @@
 body {
 	width: 80%;
 	margin: 0 auto;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#header {
+	margin-top: 40px;
 }
 
 #header h1 {
 	color: silver;
+	font-size: 2.5em;
+	font-weight: 500;
 }
 
 #new-item-section {
@@ -15,7 +22,13 @@ body {
 .new-item-component {
 	display: inline-block;
 	margin-right: 1em;
-	vertical-align: bottom;
+	vertical-align: middle;
+}
+
+#new-item-text {
+	font-family: 'Handlee', cursive;
+	font-size: 1em;
+	padding-left: 0.3em;
 }
 
 #list-items-section {
@@ -26,6 +39,7 @@ body {
 #items-header {
 	background-color: silver;
 	color: white;
+	font-size: 1.1em;
 	padding: 0.5em 1.625em;
 }
 
@@ -54,6 +68,7 @@ body {
 
 .item-descr {
 	vertical-align: bottom;
+	font-family: 'Handlee', cursive;
 }
 
 .footer-component {
