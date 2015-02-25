@@ -1,84 +1,73 @@
 <!doctype html>
 <html>
 
-<head>
-<title>Shopping List</title>
-<link rel="stylesheet" href="css/style.css">
-<script src="http://code.jquery.com/jquery.min.js"></script>
-<script src="js/app.js"></script>
-</head>
+	<head>
+		<title>Shopping List</title>
+		<link rel="stylesheet" href="css/style.css">
+		<script src="http://code.jquery.com/jquery.min.js"></script>
+		<script src="js/app.js"></script>
+	</head>
 
-<body>
+	<body>
 
-<!-- In form tag below, the "#" action prevents the form from actually being submitted. -->
+		<!-- In form tag below, the "#" action prevents the form from actually being submitted. -->
 
-<form action="#">
+		<form action="#">
 
-<header id="header">
-	<h1>Shopping List</h1>
-</header>
+			<header id="header">
+				<h1>Shopping List</h1>
+			</header>
 
-<section id="new-item-section">
-	<div id="new-item-row">
-		<label class="new-item-component" for="new-item-text">New item:</label>
-		<input class="new-item-component" type="text" id="new-item-text" maxlength="25" autofocus placeholder="item name" />
-		<img class="new-item-component" id="add-img" src="images/add.png" title="Add item -- can also just hit Enter" />
-	</div>
-</section>
+			<section id="new-item-section">
+				<div id="new-item-row">
+					<label class="new-item-component" for="new-item-text">New item:</label>
+					<input class="new-item-component" type="text" id="new-item-text" maxlength="25" autofocus placeholder="item name" />
+					<img class="new-item-component" id="add-img" src="images/add.png" title="Add item -- can also just hit Enter" />
+				</div>
+			</section>
 
-<section id="list-items-section">
-	<div id="items-header">
-		<span>List Items</span>
-	</div>
+			<section id="list-items-section">
+				<div id="items-header">
+					<span>List Items</span>
+				</div>
 
-	<div id="items-body">
+				<div id="items-body">
 
-	<ul id="items-list">
+				<ul id="items-list">
 
-		<li class="item-block">
-			<input class="item-purchased" id="item0" type="checkbox" value="1" />
-			<label class="item-descr" for="item0">eggs</label>
-		</li>
+			<!--  Examples: (for early wire-framing)
 
-		<li class="item-block">
-			<input class="item-purchased" id="item1" type="checkbox" value="1" />
-			<label class="item-descr" for="item1">bacon</label>
-		</li>
+					<li class="item-block" id="li0" draggable="true" ondragstart="drag(event)">
+						<input class="item-purchased" id="item0" type="checkbox" value="1" />
+						<label class="item-descr" for="item0">eggs</label>
+					</li>
 
-		<li class="item-block">
-			<input class="item-purchased" id="item2" type="checkbox" value="1" />
-			<label class="item-descr" for="item2">cheese</label>
-		</li>
+					<li class="item-block" id="li1" draggable="true" ondragstart="drag(event)">
+						<input class="item-purchased" id="item1" type="checkbox" value="1" />
+						<label class="item-descr" for="item1">bacon</label>
+					</li>
 
-		<li class="item-block">
-			<input class="item-purchased" id="item3" type="checkbox" value="1" />
-			<label class="item-descr" for="item3">croissants</label>
-		</li>
+					<li class="item-block" id="li2" draggable="true" ondragstart="drag(event)">
+						<input class="item-purchased" id="item2" type="checkbox" value="1" />
+						<label class="item-descr" for="item2">cheese</label>
+					</li>
 
-		<li class="item-block">
-			<input class="item-purchased" id="item4" type="checkbox" value="1" />
-			<label class="item-descr" for="item4">milk</label>
-		</li>
+			-->		
 
-		<li class="item-block">
-			<input class="item-purchased" id="item5" type="checkbox" value="1" />
-			<label class="item-descr" for="item5">orange juice</label>
-		</li>
+				</ul>		
 
-	</ul>		
+				</div>
+			</section>
 
-	</div>
-</section>
+			<footer id="footer">
+				<div id="footer-content">
+					<img class="footer-component" id="trash-img" src="images/trash.jpg" ondrop="drop(event)" ondragover="allowDrop(event)" />
+					<span class="footer-component">Drag item here to delete</span>
+				</div>
+			</footer>
 
-<footer id="footer">
-	<div id="footer-content">
-		<img class="footer-component" id="trash-img" src="images/trash.jpg" />
-		<span class="footer-component">Drag item here to delete</span>
-	</div>
-</footer>
+		</form>
 
-</form>
-
-</body>
+	</body>
 
 </html>
