@@ -40,11 +40,14 @@
 
 			<!--  Examples: (for early wire-framing)
 
-					<li class="item-block" id="li0" draggable="true" ondragstart="drag(event)">
-						<input class="item-purchased" id="item0" type="checkbox" value="1" />
-						<label class="item-descr" for="item0">eggs</label>
+					label wraps input so that an id isn't needed 
+					<li class="item-block" draggable="true" ondragstart="drag(event)">
+						<label class="item-descr"><input class="item-purchased" type="checkbox" value="1" />
+						eggs</label>
+						
 					</li>
 
+					label separate from input; id is needed
 					<li class="item-block" id="li1" draggable="true" ondragstart="drag(event)">
 						<input class="item-purchased" id="item1" type="checkbox" value="1" />
 						<label class="item-descr" for="item1">bacon</label>

@@ -49,9 +49,9 @@ function addNewItem(pItemDescr)
 	// If using an html string, layout in fashion similar to how it would be done in index.html.
 
 	$("#items-list").append(
-		'<li class="item-block" id="li' + highestItemNo + '" draggable="true" ondragstart="drag(event)">\n' +
-		'<input class="item-purchased" id="item' + highestItemNo + '" type="checkbox" value="1">\n' +
-		'<label class="item-descr" for="item' + highestItemNo + '">' + pItemDescr + '</label>\n' +
+		'<li class="item-block" id="item' + highestItemNo + '" draggable="true" ondragstart="drag(event)">\n' +
+		'<label class="item-descr"><input class="item-purchased" type="checkbox" value="1">\n' +
+		pItemDescr + '</label>\n' +
 		'</li>\n'
 		);
 
@@ -67,13 +67,13 @@ function allowDrop(ev)
 
 function drag(ev) 
 {
-    ev.dataTransfer.setData("text", ev.target.id);
+    ev.dataTransfer.setData("text/plain", ev.target.id);
 }
 
 
 function drop(ev) 
 {
     ev.preventDefault();
-    var itemId = ev.dataTransfer.getData("text");
+    var itemId= ev.dataTransfer.getData("text/plain");
     $("#" + itemId).remove();
 }
